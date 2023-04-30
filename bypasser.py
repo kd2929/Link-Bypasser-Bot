@@ -1755,9 +1755,9 @@ def indi(url):
 
 
 ##################################################################################################### 
-# linkbnao
+# guptgyan
 
-def linkbnao(url):
+def guptgyan(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
     DOMAIN = "http://guptgyan.xyz"
     url = url[:-1] if url[-1] == '/' else url
