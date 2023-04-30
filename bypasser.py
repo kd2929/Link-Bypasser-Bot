@@ -1759,11 +1759,11 @@ def indi(url):
 
 def linkbnao(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
-    DOMAIN = "https://vip.linkbnao.com"
+    DOMAIN = "http://guptgyan.xyz"
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
-    ref = "https://ffworld.xyz/"
+    ref = "http://hub.novano.me"
     h = {"referer": ref}
     resp = client.get(final_url,headers=h)
     soup = BeautifulSoup(resp.content, "html.parser")
