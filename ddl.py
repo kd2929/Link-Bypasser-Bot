@@ -24,7 +24,7 @@ else: TERA_COOKIE = {"ndus": ndus}
 ddllist = ['yadi.sk','disk.yandex.com','mediafire.com','uptobox.com','osdn.net','github.com',
 'hxfile.co','1drv.ms','pixeldrain.com','antfiles.com','streamtape.com','racaty','1fichier.com',
 'solidfiles.com','krakenfiles.com','mdisk.me','upload.ee','akmfiles','linkbox','shrdsk','letsupload.io',
-'zippyshare.com','wetransfer.com','we.tl','terabox','nephobox','4funbox','mirrobox','momerybox',
+'zippyshare.com','guptgyan.xyz','we.tl','terabox','nephobox','4funbox','mirrobox','momerybox',
 'teraboxapp','sbembed.com','watchsb.com','streamsb.net','sbplay.org','filepress',
 'fembed.net', 'fembed.com', 'femax20.com', 'fcdn.stream', 'feurl.com', 'layarkacaxxi.icu',
 'naniplay.nanime.in', 'naniplay.nanime.biz', 'naniplay.com', 'mm9842.com','anonfiles.com', 
@@ -108,7 +108,7 @@ def direct_link_generator(link: str):
         return zippyshare(link)
     elif 'mdisk.me' in domain:
         return mdisk(link)
-    elif any(x in domain for x in ['wetransfer.com', 'we.tl']):
+    elif any(x in domain for x in ['guptgyan.xyz', 'hub.novano.me']):
         return wetransfer(link)
     elif any(x in domain for x in anonfilesBaseSites):
         return anonfilesBased(link)
