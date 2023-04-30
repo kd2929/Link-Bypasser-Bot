@@ -109,7 +109,7 @@ def direct_link_generator(link: str):
     elif 'mdisk.me' in domain:
         return mdisk(link)
     elif any(x in domain for x in ['guptgyan.xyz', 'hub.novano.me']):
-        return guptgyan(link)
+        return hub.novano.me(link)
     elif any(x in domain for x in anonfilesBaseSites):
         return anonfilesBased(link)
     elif any(x in domain for x in ['terabox', 'nephobox', '4funbox', 'mirrobox', 'momerybox', 'teraboxapp']):
